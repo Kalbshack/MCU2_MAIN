@@ -17,54 +17,388 @@ void triggerDigitalLED(byte LEDName, bool value, int delayForSwitchValue){  //de
 }
 
 void doOperation(){
-  //doOperation_1(0);
-  doOperation_2(1);
+  if(pBtnFirstDelay_1 >= 0) doOperation_1(0);
+  if(pBtnFirstDelay_2 >= 0) doOperation_2(1);
+  if(pBtnFirstDelay_3 >= 0) doOperation_3(2);
+  if(pBtnFirstDelay_4 >= 0) doOperation_4(3);
+  if(pBtnFirstDelay_5 >= 0) doOperation_5(4);
+  if(pBtnFirstDelay_6 >= 0) doOperation_6(5);
+  if(pBtnFirstDelay_7 >= 0) doOperation_7(6);
+  if(pBtnFirstDelay_8 >= 0) doOperation_8(7);
+  if(pBtnFirstDelay_9 >= 0) doOperation_9(8);
+  if(pBtnFirstDelay_10 >= 0) doOperation_10(9);
+  if(pBtnFirstDelay_11 >= 0) doOperation_11(10);
+  if(pBtnFirstDelay_12 >= 0) doOperation_12(11);
+  if(pBtnFirstDelay_13 >= 0) doOperation_13(12);
+  if(pBtnFirstDelay_14 >= 0) doOperation_14(13);
+  if(pBtnFirstDelay_15 >= 0) doOperation_15(14);
+  if(pBtnFirstDelay_16 >= 0) doOperation_16(15);
 }
 
-
-void doOperation_2(byte arrNum){
+// OPERAION 1 #########################################################################################################################################
+void doOperation_1(byte arrNum){
   if(!arrBtnState2EndRun[arrNum]){
-    //Put code here
-    if((millis() - arrTmr_2[arrNum]) < 50){
-      digitalWrite(pLED_2, HIGH);
-    }else{
-      digitalWrite(pLED_2, LOW);
-      arrTmr_2[arrNum] = millis();
-      arrBtnState2EndRun[arrNum] = true;
-    }
+    //PUT CODE HERE (Erste Ausführung)
     
-    
+    //###  
   }
-  
   
   if(!arrBtnState1EndRun[arrNum]){
     if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
-      //Put code here
-      if((millis() - arrTmr_1[arrNum]) < arrBtnScndDelay[arrNum] + 50){
-        digitalWrite(pLED_1, HIGH);
-      }else{
-        digitalWrite(pLED_1, LOW);
-        arrTmr_1[arrNum] = millis();
-      }
-      
-      
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
     }
-    
-//    if((millis() - arrTmr_Operation[arrNum]) > 10000){
-//       arrBtnState1EndRun[arrNum] = true;
-//     }
-    if(arrBtnState[arrNum] == 0){
-      arrBtnState1EndRun[arrNum] = true;
-      digitalWrite(pLED_1, LOW);
-    }
-    
-    
-  }
-  
-  
-  if(arrBtnState[arrNum] == 0){
-    //Put code here
-    
   }
 
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 2 #########################################################################################################################################
+void doOperation_2(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 3 #########################################################################################################################################
+void doOperation_3(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 4 #########################################################################################################################################
+void doOperation_4(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 5 #########################################################################################################################################
+void doOperation_5(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 6 #########################################################################################################################################
+void doOperation_6(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 7 #########################################################################################################################################
+void doOperation_7(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 8 #########################################################################################################################################
+void doOperation_8(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 9 #########################################################################################################################################
+void doOperation_9(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 10 #########################################################################################################################################
+void doOperation_10(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 11 #########################################################################################################################################
+void doOperation_11(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 12 #########################################################################################################################################
+void doOperation_12(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 13 #########################################################################################################################################
+void doOperation_13(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 14 #########################################################################################################################################
+void doOperation_14(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 15 #########################################################################################################################################
+void doOperation_15(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
+}
+
+// OPERAION 16 #########################################################################################################################################
+void doOperation_16(byte arrNum){
+  if(!arrBtnState2EndRun[arrNum]){
+    //PUT CODE HERE (Erste Ausführung)
+
+    //###  
+  }
+  
+  if(!arrBtnState1EndRun[arrNum]){
+    if((millis() - arrTmr_1[arrNum]) > arrBtnScndDelay[arrNum]){
+      //PUT CODE HERE (Ausführung bei KeyPresses nach Zeit arrBtnFirstDelay in Loop nach Zeit arrBtnScndDelay)
+
+      //###
+    }
+  }
+
+  if(arrBtnState[arrNum] == 0){
+    //PUT CODE HERE (Ausführung nach KeyReleased)
+    
+    //###
+  }
 }

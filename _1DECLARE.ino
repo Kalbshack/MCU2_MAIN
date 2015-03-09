@@ -6,6 +6,20 @@ void triggerDigitalLED();
 void doOperation();
 void doOperation_1();
 void doOperation_2();
+void doOperation_3();
+void doOperation_4();
+void doOperation_5();
+void doOperation_6();
+void doOperation_7();
+void doOperation_8();
+void doOperation_9();
+void doOperation_10();
+void doOperation_11();
+void doOperation_12();
+void doOperation_13();
+void doOperation_14();
+void doOperation_15();
+void doOperation_16();
 
 const byte unsigned pRelayIO_1 = 22;  //IO-Relais
 const byte unsigned pRelayIO_2 = 23;  //Nur digitale Pins verwenden
@@ -43,11 +57,10 @@ const byte unsigned pLED_15 = A14;
 const byte unsigned pLED_16 = A15;
 
 const byte unsigned pLEDStart = 10;  //StartLED am Gehï¿½use
-const byte unsigned pSysLED13 =13;
+const byte unsigned pSysLED13 = 13;
 
 unsigned long globalChange = 0;
 const byte unsigned debounceTime = 10;
 
 const byte unsigned arrRelayOutputPins[] = {pRelayIO_1, pRelayIO_2, pRelayIO_3, pRelayIO_4, pRelayIO_5, pRelayIO_6, pRelayIO_7, pRelayIO_8, pRelay230_1, pRelay230_2, pRelay230_3, pRelay230_4, pRelay230_5, pRelay230_6};
 const byte unsigned arrOtherOutputPins[] = {pLED_1, pLED_2, pLED_3, pLED_4, pLED_5, pLED_6, pLED_7, pLED_8, pLED_9, pLED_10, pLED_11, pLED_12, pLED_13, pLED_14, pLED_15, pLED_16, pLEDStart, pSysLED13};
-
