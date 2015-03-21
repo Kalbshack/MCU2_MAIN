@@ -56,7 +56,7 @@ const byte unsigned pLED_14 = A13;
 const byte unsigned pLED_15 = A14;
 const byte unsigned pLED_16 = A15;
 
-const byte unsigned pLEDStart = 10;  //StartLED am Gehï¿½use
+const byte unsigned pLEDStart = 12;  //StartLED am Gehï¿½use
 const byte unsigned pSysLED13 = 13;
 
 unsigned long globalChange = 0;
